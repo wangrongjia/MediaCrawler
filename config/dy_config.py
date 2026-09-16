@@ -20,6 +20,7 @@ DY_SPECIFIED_ID_LIST = [
 
 # 指定DY用户ID列表
 DY_CREATOR_ID_LIST = [
-    "MS4wLjABAAAATJPY7LAlaa5X-c8uNdWkvz0jUGgpw4eeXIwu_8BhvqE",
+    #"MS4wLjABAAAATJPY7LAlaa5X-c8uNdWkvz0jUGgpw4eeXIwu_8BhvqE",
+    "MS4wLjABAAAAbDI_4eSNqMmPw4hnqd2A9Pyd_CkFJVF8wIMw4hCu2bHuuxjBvaoG7pZMbWdoQey_" # 特厨隋坡
     # ........................
 ]

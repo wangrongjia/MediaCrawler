@@ -11,6 +11,7 @@
 
 import argparse
 import logging
+import re
 
 from .crawler_util import *
 from .slider_util import *
@@ -40,3 +41,14 @@ def str2bool(v):
         return False
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
+
+def clean_filename(filename: str) -> str:
+    """
+    清理Windows文件名非法字符和不可见字符
+    """
+    # 先去除所有不可见字符（如换行、回车、制表符等）
+    filename = re.sub(r'[\r\n\t]', '_', filename)
+    # 再去除Windows非法字符
+    filename = re.sub(r'[\\\\/:*?"<>|]', '_', filename)
+    # 可选：去除首尾空格
+    return filename.strip()
